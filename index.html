@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madhuri's Portfolio</title>
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7896db9c3d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="operateMenu(-200)"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="operateMenu(0)"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Madhuri Panchakshri</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="\My Photo.jpg" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Final-year Information Technology student passionate about building impactful software
+                        solutions. Skilled in Python, Java, and web technologies, with experience in data analytics and
+                        machine learning.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br />Python | Java | C++ (Basic)</li>
+                            <li><span>Web</span><br />HTML | CSS | JavaScript</li>
+                            <li><span>Databases</span><br />MySQL | MongoDB</li>
+                            <li><span>Tools</span><br />VS Code | Git | GitHub</li>
+                            <li><span>Soft Skills</span><br />Communication | Adaptability | Problem Solving</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br />BE IT, SPPU, CGPA: 8.98</li>
+                            <li><span>2020 - 2022</span><br />HSC, 74.33%</li>
+                            <li><span>2010 - 2020</span><br />SSC, 95.80%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <h3>Car Price Prediction System</h3>
+                    <p>Used ML techniques to predict car prices with 85% accuracy.</p>
+                    <a href="https://github.com/MadhuriP2954/Car-price-Prediction-System" target="_blank">View
+                        Project</a>
+                </div>
+                <div class="work">
+                    <h3>Movie Recommender System</h3>
+                    <p>Content-based movie recommendation using Python & ML.</p>
+                    <a href="https://github.com/MadhuriP2954/movie-recommender" target="_blank">View Project</a>
+                </div>
+                <div class="work">
+                    <h3>Hospital Management System</h3>
+                    <p>Web app to manage hospital appointments and records.</p>
+                    <a href="https://github.com/MadhuriP2954/Hospital-Management-System" target="_blank">View
+                        Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> panchaksharimadhuri7@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7745820221</p>
+            <div class="social-icons">
+                <a href="mailto:panchaksharimadhuri7@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/MadhuriP2954" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/madhuri-panchakshri/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="\Madhuri_Panchakshri_Resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+    </div>
+</body>
+
+</html>
